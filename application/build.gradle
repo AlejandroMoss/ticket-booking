@@ -1,0 +1,18 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':infrastructure')
+
+    // Spring Boot starter mínimo
+    implementation 'org.springframework.boot:spring-boot-starter'
+
+    // Testing
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+bootJar {
+    mainClass = 'com.mosscompanysas.application.Application'
+}

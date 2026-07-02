@@ -1,0 +1,5 @@
+rootProject.name = 'ticket-bookingv3'
+
+include 'domain'
+include 'application'
+include 'infrastructure'
